@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Chocoblock</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		body{
+				background-color:#F5D76E;
+			}
+			
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding:0px;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+			
+			
+		#landing{
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+			align-items:center;
+			/*margin-right:auto;*/
+			/*margin-left:auto;*/
+			/*height:auto;*/
+			/*width:auto;*/
+			/*padding:30px;*/
+			
+			
+		}
+		
+		.box{
+			display: inline-block;
+			width: 250px;
+			text-align: center;
+			margin:5px;
+			border-radius:10px;
+			font-size: 35px;
+			
+			
+		}
+		
+		#laptop{
+			flex:1;
+		}
+
+		@media screen and (min-width: 700px){
+			nav{
+				flex-direction:row;
+				justify-content:space-between;
+				height:100%;
+				padding-bottom:30px;
+			}
+			a{
+				border:0px;
+				font-size:1.25em;
+
+			}
+			#logoNav{
+				flex:4;
+				font-size:3em;
+				text-align:left;
+			}
+		}
+
+			@media screen and (max-width: 950px) and (min-width:700px){
+				#logoNav{
+				flex:3;
+				font-size:2em;
+				text-align:left;
+			}
+				
+			}
+			
+			
+			
+			
+		</style>
+	</head>
+	<body>
+
+		<nav>
+				<a id="logoNav">CHOCOBLOCK</a>
+				<a href="#">Home</a>
+				<a href="#">Projects</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+				<a href="#">Photos</a>
+		</nav>
+		
+		<section id="landing">
+			<article class="box">
+				<h2>Make Creative Clever Fun Apps. Simple</h2>
+			</article>
+			<article class="box" id="laptop">
+				<img src="laptop.png" alt="a laptop with wifi">
+			</article>
+		</section>
+
+	</body>
+</html>
